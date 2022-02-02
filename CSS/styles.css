@@ -242,6 +242,7 @@ a {
   border: 1px solid var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
+  box-shadow: 0 0 10px var(--color-border);
 }
 .input-group .input {
   border: 0;
@@ -256,4 +257,26 @@ a {
   .input {
     font-size: 1.5rem;
   }
+}
+
+/* Card */
+
+.card {
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  overflow: hidden;
+}
+
+.card__header,
+.card__body {
+  padding: 3rem 4rem;
+}
+
+.card--primary .card__header {
+  background: var(--color-primary);
+  color: white;
+}
+.card--secondary .card__header {
+  background: var(--color-secondary);
+  color: white;
 }
