@@ -1,72 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Test Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/normalize.css">
     <link rel="stylesheet" href="/CSS/styles.css">
 </head>
+
 <body>
-    <section class="block block--dark block--skewed-right block-showcase">
+    <section class="block">
         <header class="block__header">
-            <h2> User Friendly Control Panel</h2>
+            <h2>What our Customers are saying</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis, dolorum?</p>
         </header>
-        <div class="container grid grid--1x2">
-            <picture class="block-showcase__picture">
-                <source type="image/webp" srcset="Images/ipad.webp 1x, Images/ipad2x.webp 2x">
-                <source type="image/png" srcset="Images/ipad.png 1x, Images/ipad2x.png 2x">
-                <img class="block-showcase__image" src="Images/ipad.png" alt="">
-            </picture>
-            <ul class="list">
-                <li> 
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="Images/sprite.svg#wordpress"></use>
-                              </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Managed Updates</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iste ipsum illo velit, culpa tempora, quae incidunt architecto dolore ipsam ad! Repellendus expedita suscipit ducimus quidem provident atque inventore facilis obcaecati, voluptas adipisci odit quod a itaque nemo. Veritatis, provident.</p>
-                        </div>
+        <div class="container">
+            <div class="card testimonial">
+                <div class="grid grid--1x2">
+                    <div class="testimonial__image">
+                        <img src="Images/testimonial.jpg" alt="A happy, smiling customer">
+                        <span class="icon-container icon-container--accent">
+                            <svg class="icon icon--white icon--small">
+                                <use xlink:href="Images/sprite.svg#quotes"></use>
+                            </svg>
+                        </span>
                     </div>
-                </li>
-                <li>
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="Images/sprite.svg#wordpress"></use>
-                              </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Managed Updates</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iste ipsum illo velit, culpa tempora, quae incidunt architecto dolore ipsam ad! Repellendus expedita suscipit ducimus quidem provident atque inventore facilis obcaecati, voluptas adipisci odit quod a itaque nemo. Veritatis, provident.</p>
-                        </div>
-                    </div>
-                </li>
-                <li> 
-                    <div class="media">
-                        <div class="media__image">
-                            <svg class="icon icon--primary">
-                                <use xlink:href="Images/sprite.svg#wordpress"></use>
-                              </svg>
-                        </div>
-                        <div class="media__body">
-                            <h3 class="media__title">Easy Start & Managed Updates</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus iste ipsum illo velit, culpa tempora, quae incidunt architecto dolore ipsam ad! Repellendus expedita suscipit ducimus quidem provident atque inventore facilis obcaecati, voluptas adipisci odit quod a itaque nemo. Veritatis, provident.</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                    <blockquote class="quote">
+                        <p class="quote__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+                            consequatur explicabo, vel laudantium possimus dolor praesentium qui laboriosam commodi
+                            minima!</p>
+                        <footer>
+                            <div class="media">
+                                <div class="media__image">
+                                    <svg class="icon icon--primary quote__line">
+                                        <use xlink:href="Images/sprite.svg#line"></use>
+                                    </svg>
+                                </div>
+                                <div class="media__body quote__body">
+                                    <h3 class="media__title quote__author">John Smith</h3>
+                                    <p class="quote__company">ABC Company</p>
+                                </div>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </section>
 
-      
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
