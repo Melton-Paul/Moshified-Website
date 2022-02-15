@@ -1,6 +1,7 @@
-/* Color Pallete */
+@import "./normalize.css";
 
-:root {
+/* Color Pallete */
+:root  {
   --color-primary: #2584ff;
   --color-secondary: #00d9ff;
   --color-accent: #ff3400;
@@ -23,7 +24,7 @@
 
 html {
   font-size: 62.5%;
-} 
+}
 body {
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 2.4rem;
@@ -767,15 +768,14 @@ a {
 }
 .footer-list__item {
   margin: 1.1rem 0;
-
 }
 .footer-list__item > a {
   color: #ccc;
-  opacity: .6;
-  transition: color .3s;
+  opacity: 0.6;
+  transition: color 0.3s;
 }
 .footer-list__item > a:hover {
-  color:white;
+  color: white;
   opacity: 1;
 }
 .footer-logo__container {
@@ -788,18 +788,17 @@ a {
 .footer__copyright {
   font-size: 2.1rem;
   color: white;
-  opacity: .3;
+  opacity: 0.3;
 }
 
-
-@media screen and (min-width:768px){
-  .footer__sections{
+@media screen and (min-width: 768px) {
+  .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
-  }  
+  }
   .footer-logo__container {
     order: -1;
     margin-top: 1rem;
-    justify-content: flex-start
+    justify-content: flex-start;
   }
   .footer-logo__container img {
     /* TODO: Consider changing all images to 100% width */
@@ -822,5 +821,4 @@ a {
   .footer__heading {
     font-size: 1.6rem;
   }
-  
 }
